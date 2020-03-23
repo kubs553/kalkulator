@@ -1,0 +1,73 @@
+<template>
+<div class="page" data-name="kalkulator">
+  <div class="navbar">
+    <div class="navbar-bg"></div>
+    <div class="navbar-inner sliding">
+      <div class="left">
+        <a href="#" class="link back">
+          <i class="icon icon-back"></i>
+          <span class="if-not-md">Back</span>
+        </a>
+      </div>
+      <div class="title">Kalkulator</div>
+    </div>
+  </div>
+  <div class="page-content">
+    <div class="list inline-labels no-hairlines-md">
+      <ul>
+        <li class="item-content item-input">
+          <div class="item-media">
+            <i class="icon demo-list-icon"></i>
+          </div>
+          <div class="item-inner">
+            <div class="item-title item-label">Liczba 1</div>
+            <div class="item-input-wrap">
+              <input type="number" id="liczba1" name="liczba2" placeholder="Liczba 1">
+              <span class="input-clear-button"></span>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-media">
+            <i class="icon demo-list-icon"></i>
+          </div>
+          <div class="item-inner">
+            <div class="item-title item-label">Liczba 2</div>
+            <div class="item-input-wrap">
+              <input type="number" id="liczba2" name="liczba2" placeholder="Liczba 2">
+              <span class="input-clear-button"></span>
+            </div>
+          </div>
+        </li>
+        <li class="item-content item-input">
+          <div class="item-media">
+            <i class="icon demo-list-icon"></i>
+          </div>
+          <div class="item-inner">
+            <div class="item-title item-label">Wynik: </div>
+            <div class="item-input-wrap">
+              <input disabled type="number" id="wynik" name="wynik">
+              <span class="input-clear-button"></span>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div id="wynik"></div>
+    <br><br>
+    <div class="block">
+      <div class="row">
+        <button class="col button button-outline" id="dodaj">Dodaj</button>
+        <button class="col button button-outline" id="odejmij">Odejmij</button>
+      </div><br><br>
+      <div class="row">
+        <button class="col button button-outline" id="pomnoz">Pomnóż</button>
+        <button class="col button button-outline" id="podziel">Podziel</button>
+      </div>
+    </div>
+  </div>
+</div>
+</template>
+<script>
+export default {};
+</script>
